@@ -14,6 +14,7 @@ if(isset($_GET['cid'])){
                     <div class="col-md-12">
                         <h3 class="py-3">Add Categories</h3>
                         <form class="mx-3" method="post" enctype="multipart/form-data">
+                            <input type="hidden" name="catId" value="<?php echo $row ['catId']?>">
                                 <div class="mb-3">
                                     <label for="exampleInputEmail1" class="form-label">category name</label>
                                     <input type="text" class="form-control" id="exampleInputEmail1"

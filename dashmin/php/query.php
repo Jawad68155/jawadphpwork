@@ -17,6 +17,40 @@ if(isset($_POST['addCategory'])){
             alert('category add successfully')
             </script>";
         }
+    }else{
+        echo "<script>
+        alert('invalid extension type')
+        </script>";
     }
+}
+
+//update catagory
+if(isset($_POST['updateCatagory'])){
+    $catId = $_POST['catId'];
+    $catName = $_POST['catName'];
+    if(!empty($_FILES['catImage']['name'])){
+        $catTmpName = $_FILES['catImage']['tmp_name'];
+    $extension = pathinfo($catImageName,PATHINFO_EXTENSION);
+    $imagPath = 'img/categories/'.$catImageName;
+    if($extension == "jpg" || $extension == "png" || $extension == "jpeg" || $extension == "webp"){
+        if(move_uploaded_file($catTmpName,$imagPath)){
+            $query = $pdo -> prepare("update catagory set catName = :pn, catImage = :pi where catId =:pid");
+            $query->bindParam("pid",$catId);
+            $query->bindParam("pn",$catName);
+            $query->bindParam("pi",$catImageName);
+            $query->execute();
+            echo "<script>
+            alert('category updated successfully')
+            location.assign('viewcategory.php')
+            </script>";
+        }
+    }else{
+        echo "<script>
+        alert('invalid extension type')
+        </script>";
+    
+    }
+  }
+
 }
 ?>
