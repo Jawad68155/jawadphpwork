@@ -65,12 +65,12 @@
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fa fa-laptop me-2"></i>Categories</a>
                         <div class="dropdown-menu bg-transparent border-0">
                             <a href="addcategory.php" class="dropdown-item">Add Categories</a>
-                            <a href="viewcategory.php" class="dropdown-item">All Categories</a>
+                            <a href="viewcategory.php" class="dropdown-item">all categories</a>
                             <a href="element.html" class="dropdown-item">Other Elements</a>
                         </div>
                     </div>
                     <div class="nav-item dropdown">
-                        <a href="product.php" class="nav-link "><i class="fa fa-laptop me-2"></i>Products</a>
+                        <a href="product.php" class="nav-link" ><i class="fa fa-laptop me-2"></i>products</a>
                        
                     </div>
                     <a href="widget.html" class="nav-item nav-link"><i class="fa fa-th me-2"></i>Widgets</a>
