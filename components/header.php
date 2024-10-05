@@ -111,7 +111,7 @@ include("model/query.php")
 								<a href="contact.html">Contact</a>
 							</li>
                             <li>
-								<a href="contact.html">signup</a>
+								<a href="signup.php">signup</a>
 							</li>
 						</ul>
 					</div>	

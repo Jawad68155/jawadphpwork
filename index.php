@@ -1,8 +1,7 @@
-
 <?php
-include("components/header.php")
+include("components/header.php");
 ?>
-	<!-- Slider -->
+<!-- Slider -->
 	<section class="section-slide">
 		<div class="wrap-slick1">
 			<div class="slick1">
@@ -938,8 +937,6 @@ include("components/header.php")
 			</div>
 		</div>
 	</section>
-
-
-<?php
-include("components/footer.php")
+	<?php
+include("components/footer.php");
 ?>
